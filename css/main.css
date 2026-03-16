@@ -1,16 +1,17 @@
 body {
-    background-color: #fffef1;
+    background-image: linear-gradient(to bottom, #ffede8, #ffdfa3);
     font-family: "Comic Sans MS", "Comic Sans", cursive;
-    font-size: x-large;
+    font-size: 14pt;
     font-style: inherit;
+    margin: 50px;
 }
-h1, h3, strong {
+h1, h3, strong, div {
     color: #643a00
 }
 h2 {
     color: #bd7100
 }
-ul, ol {
+ul, ol, p {
     color: #5e3201
 }
 button {
