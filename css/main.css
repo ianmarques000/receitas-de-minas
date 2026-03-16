@@ -1,0 +1,24 @@
+body {
+    background-color: #fffef1;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: x-large;
+    font-style: inherit;
+}
+h1, h3, strong {
+    color: #643a00
+}
+h2 {
+    color: #bd7100
+}
+ul, ol {
+    color: #5e3201
+}
+button {
+    color: #945900
+    
+}
+img {
+        max-width: 100%;
+        display: block;
+        margin-bottom: 10px;
+    }
