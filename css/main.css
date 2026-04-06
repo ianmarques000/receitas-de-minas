@@ -3,7 +3,8 @@ body {
     font-family: "Comic Sans MS", "Comic Sans", cursive;
     font-size: 14pt;
     font-style: inherit;
-    margin: 50px;
+    margin-left: 9%;
+    margin-right: 9%;
 }
 h1, h3, strong, div {
     color: #643a00
@@ -23,3 +24,20 @@ img {
         display: block;
         margin-bottom: 10px;
     }
+.sub-header {
+    text-align: center;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 15px rgba(255, 153, 0, 0.185);
+    padding: 20px;
+    background-image: linear-gradient(to bottom, #ffedcb, #ffede8);
+    border: 1px dashed #666666;
+    
+}
+.secret {
+    background-color: #ffede8;
+}
+.editable:focus::placeholder {
+    color: transparent;
+}

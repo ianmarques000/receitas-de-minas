@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<header>    
-    <h1>Delícias de Minas</h1>
+<header> 
+    <div class="sub-header">   
+        <h1>Delícias de Minas</h1>
+        <h2>Receita pão de queijo</h2>
+        <img src="images/cheese_bread.jpg" alt="Cheese Bread" width="303" height="200"; style="border-radius: 15px;">
+        <button class="secret" popovertarget="segredo" style="border-radius: 8px #ccc;">Ver segredo do Chef</button>
+        <div id="segredo" popover>
+            <p>
+                Jamais coloque os ovos com a massa quente,
+                senão eles cozinham e o pão não cresce...
+            </p>
+    </div>
 </header>
     <main>
-        <section>
-            <h2>Receita pão de queijo</h2>
-            <img src="images/cheese_bread.jpg" alt="Cheese Bread" width="303" height="200"; style=" border-radius: 15px;">
+        <section style="padding: 20px;">
             <strong>Ingredientes: </strong>
-            <button popovertarget="segredo" style="border-radius: 8px #ccc;">Ver segredo do Chef</button>
-            <div id="segredo" popover>
-                <p>
-                    Jamais coloque os ovos com a massa quente,
-                    senão eles cozinham e o pão não cresce...
-                </p>
-            </div>
-            
             <ul>
                 <li>1 ovo inteiro</li>
                 <li>1 colher (café) de sal</li>
@@ -32,7 +32,7 @@
                 <li>1 xícara (chá) de polvilho azedo</li>
             </ul>
             <section>
-                <div style="border: 1px dashed #444444; padding: 20px;">
+                <div style="border: 1px dashed #444444; padding: 20px; box-shadow: 10px 10px 15px rgba(255, 153, 0, 0.185);">
                 <h2>Porções</h2>
                 <h3>Serve 15 Pessoas</h3>
                 <h2>Tempo de preparo</h2>
@@ -50,12 +50,24 @@
         </section>
         <hr>
         <section>
-            <h3>Suas anotações</h3>
-            <div style="border: 1px dashed #666666; padding: 20px;" contenteditable="true">
-                Clique aqui para adicionar suas observações...
-            </div>
+            <div 
+                id="anotacoes" 
+                class="editable" 
+                style="border: 1px dashed #666666; padding: 10px;" 
+                contenteditable="true"
+                onfocus="limparCampo(this)">Clique aqui para adicionar suas observações...</div>
         </section>
-        
     </main>
+    <script>
+        function limparCampo(elemento) {
+            const textoInicial = "Clique aqui para adicionar suas observações...";
+            
+            if (elemento.innerText.trim() === textoInicial) {
+                elemento.innerText = "";
+                elemento.style.color = "#000"; 
+                elemento.style.borderStyle = "solid";
+            }
+        }
+    </script>
 </body>
 </html>
